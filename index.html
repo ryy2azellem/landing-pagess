@@ -19,6 +19,7 @@
       text-align: center;
       padding: 80px 20px;
       background: rgba(30, 20, 20, 0.8);
+      position: relative;
     }
 
     header h1 {
@@ -44,6 +45,7 @@
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
+      display: inline-block;
       transition: 0.3s;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
@@ -82,39 +84,6 @@
       box-shadow: 0 5px 15px rgba(0,0,0,0.5);
     }
 
-    form {
-      max-width: 400px;
-      margin: auto;
-      text-align: left;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border: 1px solid #d4af37;
-      border-radius: 5px;
-      background: #3e2f2f;
-      color: #f4e1b6;
-    }
-    form input::placeholder, form textarea::placeholder {
-      color: #f4e1b6aa;
-    }
-    form button {
-      background: #d4af37;
-      color: black;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    form button:hover {
-      background-color: #bfa137;
-      transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-    }
-
     footer {
       background: rgba(30, 20, 20, 0.9);
       color: #aaa;
@@ -128,6 +97,11 @@
   <header>
     <h1>Premium Chess Set</h1>
     <p>Luxury handcrafted chess pieces for champions</p>
+
+    <div class="btn-container">
+      <a href="https://wa.me/639634483871?text=Hello!%20I%20want%20to%20order%20a%20Premium%20Chess%20Set." target="_blank" class="btn">Order via WhatsApp</a>
+      <a href="#contact" class="btn">Get Free Puzzle PDF</a>
+    </div>
   </header>
 
   <div class="section">
@@ -140,18 +114,13 @@
   </div>
 
   <div class="section">
-    <h2>Sign Up to Get Free Puzzle Guide</h2>
-    <!-- Replace the action with your Brevo form URL -->
-    <form action="YOUR_BREVO_FORM_URL" method="POST">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder="Enter your name" required>
+    <h2>Get Your Free Chess Puzzle</h2>
+    <p>Sign up below and we’ll send you the exclusive <strong>Advance to Mastery Chess Puzzle PDF</strong> straight to your email!</p>
 
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="Enter your email" required>
-
-      <button type="submit">Sign Up</button>
-    </form>
-    <p>After signing up, check your email for the free PDF Puzzle Guide!</p>
+    <!-- ✅ Klaviyo Embed Form Placeholder -->
+    <!-- Replace the sample code below with the actual embed code from Klaviyo -->
+    <div class="klaviyo-form-RANDOMCODE"></div>
+    <script async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=YOUR_COMPANY_ID"></script>
   </div>
 
   <footer>
